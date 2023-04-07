@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Craig - Designer / Developer</title>
+
+    <style>
+        html {
+            height: -webkit-fill-available;
+        }
+        body {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            background-color: #161616;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+        }
+        
+        div {
+            max-width: 800px;
+            padding: 1em;
+            box-sizing: border-box;
+        }
+
+        div * {
+            opacity: 0;
+            animation-fill-mode: forwards;
+            animation-name: ani;
+            animation-duration: 1s;
+        }
+
+        h1 {
+            font-size: 1em;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        span {
+            display: block;
+            animation-delay: 0.8s;
+        }
+        
+        span:first-of-type {
+            font-weight: 500;
+            color: #7e7e7e;
+            margin-bottom: 1em;
+            animation-delay: 0.2s;
+        }
+
+        @keyframes ani {
+            from {
+                opacity: 0;
+                transform: translateY(17px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Walter Craig</h1>
+        <span>Designer &amp; Developer</span> <span>Focused on Web &amp; Mobile App development. Building with html, sass, Js, SQL, &amp; PHP.</span>
+    </div>
+</body>
+</html>
